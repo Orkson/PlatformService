@@ -63,3 +63,4 @@ D:\Projects\C#\apivs\PlatformService\obj\Debug\net6.0\PlatformService.pdb
 D:\Projects\C#\apivs\PlatformService\obj\Debug\net6.0\PlatformService.genruntimeconfig.cache
 D:\Projects\C#\apivs\PlatformService\obj\Debug\net6.0\ref\PlatformService.dll
 D:\Projects\C#\apivs\PlatformService\bin\Debug\net6.0\appsettings.Production.json
+D:\Projects\C#\apivs\PlatformService\bin\Debug\net6.0\RabbitMQ.Client.dll
