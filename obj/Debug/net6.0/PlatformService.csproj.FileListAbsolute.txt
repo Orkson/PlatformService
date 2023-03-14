@@ -64,3 +64,10 @@ D:\Projects\C#\apivs\PlatformService\obj\Debug\net6.0\PlatformService.genruntime
 D:\Projects\C#\apivs\PlatformService\obj\Debug\net6.0\ref\PlatformService.dll
 D:\Projects\C#\apivs\PlatformService\bin\Debug\net6.0\appsettings.Production.json
 D:\Projects\C#\apivs\PlatformService\bin\Debug\net6.0\RabbitMQ.Client.dll
+D:\Projects\C#\apivs\PlatformService\bin\Debug\net6.0\Google.Protobuf.dll
+D:\Projects\C#\apivs\PlatformService\bin\Debug\net6.0\Grpc.AspNetCore.Server.dll
+D:\Projects\C#\apivs\PlatformService\bin\Debug\net6.0\Grpc.AspNetCore.Server.ClientFactory.dll
+D:\Projects\C#\apivs\PlatformService\bin\Debug\net6.0\Grpc.Core.Api.dll
+D:\Projects\C#\apivs\PlatformService\bin\Debug\net6.0\Grpc.Net.Client.dll
+D:\Projects\C#\apivs\PlatformService\bin\Debug\net6.0\Grpc.Net.ClientFactory.dll
+D:\Projects\C#\apivs\PlatformService\bin\Debug\net6.0\Grpc.Net.Common.dll
