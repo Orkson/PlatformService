@@ -10,8 +10,8 @@ using PlatformService.SyncDataServices.Grpc;
 var builder = WebApplication.CreateBuilder(args);
 
 
-//Console.WriteLine("--> Using InMem Db");
-//builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMem"));
+Console.WriteLine("--> Using InMem Db");
+builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMem"));
 
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
@@ -51,6 +51,14 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.MapControllers();
+app.MapGrpcService<GrpcPlatformService>();
+app.MapGet("/protos/platforms.proto", async context =>
+    {
+        Console.WriteLine("---> Reading PROTOS");
+        await context.Response.WriteAsync(File.ReadAllText("Protos/platforms.proto"));
+    });
+
 
 using (var scope = app.Services.CreateScope())
 {
@@ -59,13 +67,7 @@ using (var scope = app.Services.CreateScope())
     PrepDb.PrepPopulation(app, env.IsProduction());
 }
 
-    app.MapControllers();
-    app.MapGrpcService<GrpcPlatformService>();
-    app.MapGet("/protos/platforms.proto", async context =>
-    {
-        Console.WriteLine("---> Reading PROTOS");
-        await context.Response.WriteAsync(File.ReadAllText("Protos/platforms.proto"));
-    });
+    
 
 
 
